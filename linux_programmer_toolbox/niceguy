@@ -1,0 +1,5 @@
+#!/bin/bash
+# The niceguy - sleeps most of the time
+while true; do
+    sleep .1
+done

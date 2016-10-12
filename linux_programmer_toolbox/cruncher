@@ -1,0 +1,5 @@
+#!/bin/sh
+# The cruncher – consumes the CPU with nonsense
+while true; do
+    true
+done

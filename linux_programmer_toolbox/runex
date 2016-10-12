@@ -1,0 +1,12 @@
+#!/bin/bash
+
+./cruncher &
+./niceguy &
+
+# Trap SIGINT (Ctrl+C) to clean up
+trap 'echo stopping; kill %1 %2; break' SIGINT
+
+while true; do
+    ps -C niceguy -C cruncher -o etime,pid,pri,cmd
+    sleep .5
+done
